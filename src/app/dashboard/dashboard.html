@@ -1,9 +1,0 @@
-<h2>Dashboard</h2>
-
-<div *ngFor="let mov of movimentacoes">
-  <p [style.color]="mov.tipo === 'despesa' ? 'red' : 'green'">
-    {{ mov.data | date:'dd/MM/yyyy' }} - {{ mov.descricao }} - {{ mov.valor | currency:'BRL':'symbol':'1.2-2' }}
-  </p>
-</div>
-
-<h3>Saldo total: {{ saldo | currency:'BRL':'symbol':'1.2-2' }}</h3>
